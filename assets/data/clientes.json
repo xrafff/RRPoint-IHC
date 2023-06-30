@@ -1,0 +1,24 @@
+{
+    "clientes":
+    [
+        {
+            "id": "1",
+            "nome": "João da Silva Sauro",
+            "sexo": "Masculino",
+            "cpf": "123.456.789-10",
+            "pessoaFisica": "Sim",
+            "telefone": "(11) 4444-4444",
+            "celular": "(11) 9 1234-1234",
+            "email": "joaolindinho1234@gmail.com",
+            "emailSecundario": "joaojaoquejao@hotmail.com",
+            "dataNascimento": "15/04/1966",
+            "status": "Ativo",
+            "cep": "15715-870",
+            "logradouro": "Av. José Pedro",
+            "bairro": "Vila dos Jumentos",
+            "numero": "153",
+            "cidade": "Rolandia",
+            "estado": "PR"
+        }
+    ]
+}

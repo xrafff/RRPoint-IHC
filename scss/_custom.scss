@@ -1,0 +1,42 @@
+// Here you can add other styles
+.sidebar-nav .nav-link.active .nav-icon
+{
+    color: rgba(17, 85, 113, 1) !important;
+    background: rgba(208, 208, 208, 1) !important;
+}
+.sidebar-nav .nav-link .nav-icon
+{
+    color: rgba(17, 85, 113, 1) !important
+}
+.sidebar-nav .nav-link.active
+{
+    color: rgba(17, 85, 113, 1) !important;
+    background: rgba(208, 208, 208, 1) !important;
+}
+.sidebar-nav .nav-link
+{
+    color: rgba(17, 85, 113, 1) !important
+}
+.header
+{
+    background: rgba(0, 171, 205, 1);
+}
+.header-nav .nav-link
+{
+    color: rgba(255, 255, 255, 1);
+}
+body
+{
+    font-family: Poppins, sans-serif;
+}
+.sidebar-brand
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0);
+}
+.tela-login
+{
+    background: rgb(2,1,35);
+    background: linear-gradient(61deg, rgba(2,1,35,1) 0%, rgba(66,116,104,1) 86%, rgba(4,207,248,1) 100%);
+}

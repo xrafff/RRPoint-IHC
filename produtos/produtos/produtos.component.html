@@ -1,0 +1,133 @@
+<div class="fade-in">
+  <c-card>
+    <c-card-header>
+      Produtos
+    </c-card-header>
+    <c-card-body>
+      <c-row style="margin-left: 25px">
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label for="Nome">Nome</label>
+          </c-row>
+          <c-row>
+            <input class="form-control" cFormControl
+            id="Nome"
+            placeholder="Nome do produto"
+            type="text"/>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label for="Categoria">Categoria</label>
+          </c-row>
+          <c-row>
+            <input class="form-control" cFormControl
+            id="Categoria"
+            placeholder="Categoria do produto"
+            type="text"/>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label>Status</label>
+          </c-row>
+          <c-row>
+            <select class="form-control" aria-label="Status" cSelect>
+              <option>Escolha um status</option>
+              <option value="1">Em estoque</option>
+              <option value="2">Esgotado</option>
+            </select>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            &nbsp;
+          </c-row>
+          <c-row style="padding-left: 10px; padding-right: 80px;">
+            <button style="color: #fff;" class="btn btn-info wd-50" cButton color="primary" color="primary">Filtrar</button>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+      </c-row>
+      <c-row>
+        &nbsp;
+      </c-row>
+      <c-row style="margin-left: 15px">
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <button style="color: #fff;" class="btn btn-success" cButton color="success" color="success" routerLink="/produtos/novo-produto">Incluir novo produto</button>
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+      </c-row>
+      <c-row style="margin-left: 3%; margin-right: 3%;">
+        <table class="table table-striped" cTable>
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Data de cadastro</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Estoque</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of listaProdutos">
+              <th scope="row">{{ item['id'] }}</th>
+              <td>{{ item['nome'] }}</td>
+              <td>{{ item['nomeCategoria'] }}</td>
+              <td>{{ item['dataCadastro'] }}</td>
+              <td>R$ {{ item['preco'] }}</td>
+              <td>{{ item['estoque'] }}</td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilPencil" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilFindInPage" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #dc3545" routerLink="./" cNavLink>
+                  <svg cIcon name="cilDelete" size="md"></svg>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </c-row>
+      <c-row>
+        &nbsp;
+      </c-row>
+      <c-row style="margin-left: 3%; margin-right: 3%;">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./"><</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">1</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">2</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">3</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">></a></li>
+          </ul>
+        </nav>
+      </c-row>
+    </c-card-body>
+  </c-card>
+</div>

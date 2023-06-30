@@ -1,0 +1,52 @@
+<div class="tela-login bg-light min-vh-100 d-flex flex-row align-items-center">
+  <c-container>
+    <c-row class="justify-content-center">
+      <c-col md="8">
+        <c-card-group>
+          <c-card class="p-4" style="height: 500px; border-radius: 20px;">
+            <c-card-body style="padding-top: 75px; padding-right: 50px;">
+              <c-row>
+                <c-col>
+                  <img style="padding-left: 15%; padding-top: 50px;" src="../../../../assets/img/logo/logo.png">
+                </c-col>
+                <c-col>
+                  <form cForm>
+                    <h1>RRPoint</h1>
+                    <p class="text-medium-emphasis">Sistema de vendas</p>
+                    <c-input-group class="mb-3">
+                      <span cInputGroupText>
+                        <svg cIcon name="cilUser"></svg>
+                      </span>
+                      <input autoComplete="email" cFormControl placeholder="Email" />
+                    </c-input-group>
+                    <c-input-group class="mb-4">
+                      <span cInputGroupText>
+                        <svg cIcon name="cilLockLocked"></svg>
+                      </span>
+                      <input
+                        autoComplete="current-password"
+                        cFormControl
+                        placeholder="Senha"
+                        type="password"
+                      />
+                    </c-input-group>
+                    <c-row>
+                      <button style="margin-left: calc(50% - 200px); width: 400px; height: 50px; border-color: #57B846; border-radius: 30px; background: #57B846;" cButton class="btn px-4">
+                        Login
+                      </button>
+                    </c-row>
+                    <c-row>
+                      <button style="text-decoration: none; color: #115571; margin-left: calc(50% - 200px); width: 400px; height: 50px;" cButton class="px-0" color="link">
+                        Esqueci a senha
+                      </button>
+                    </c-row>
+                  </form>
+                </c-col>
+              </c-row>
+            </c-card-body>
+          </c-card>
+        </c-card-group>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>

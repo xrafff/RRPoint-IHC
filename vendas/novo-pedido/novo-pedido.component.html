@@ -1,0 +1,258 @@
+<div class="fade-in">
+  <c-card>
+    <c-card-header>
+      Novo Pedido
+    </c-card-header>
+    <c-card-body>
+      <form cForm>
+        <c-row>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="nome">Nome do vendedor</label>
+              <select class="form-control" aria-label="Nome do vendedor" cSelect>
+                <option>Escolha um vendedor</option>
+                <option value="1">Jão João</option>
+                <option value="2">Raquel</option>
+                <option value="3">Rafael</option>
+              </select>
+            </div>
+          </c-col>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="Cliente">Cliente</label>
+              <select class="form-control" aria-label="Cliente" cSelect>
+                <option>Escolha um Cliente</option>
+                <option value="1">João</option>
+                <option value="2">Serafina</option>
+                <option value="3">José</option>
+                <option value="4">Rafael</option>
+                <option value="5">Raquel</option>
+              </select>
+            </div>
+          </c-col>
+        </c-row>
+        <c-row>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="Entrega">Entrega</label>
+              <select class="form-control" aria-label="Entrega" cSelect>
+                <option>Escolha um opção de entrega</option>
+                <option value="1">Entrega no endereço</option>
+                <option value="2">Retirada no centro de distribuição</option>
+              </select>
+            </div>
+          </c-col>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="telefone">Telefone</label>
+              <input class="form-control" cFormControl
+                        id="telefone"
+                        placeholder="(11) 4444-4444"
+                        type="tel"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  />
+            </div>
+          </c-col>
+          <c-col class="mb-3 w10">
+            <label cLabel for="celular">Celular</label>
+            <input class="form-control" cFormControl
+                      id="celular"
+                      placeholder="(11) 9 4444-4444"
+                      type="tel"
+                      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                />
+          </c-col>
+        </c-row>
+        <c-row>
+            <c-col>
+              <label cLabel for="cep">CEP</label>
+              <input class="form-control" cFormControl
+                        id="cep"
+                        placeholder="15715-870"
+                        type="text"
+                  />
+            </c-col>
+            <c-col>
+              <label cLabel for="logradouro">Logradouro</label>
+              <input class="form-control" cFormControl
+                        id="logradouro"
+                        placeholder="Av. José Pedro"
+                        type="text"
+                  />
+            </c-col>
+            <c-col>
+              <label cLabel for="bairro">Bairro</label>
+              <input class="form-control" cFormControl
+                        id="bairro"
+                        placeholder="Vila do Jumentos"
+                        type="text"
+                  />
+            </c-col>
+            <c-col>
+              <label cLabel for="numero">Número</label>
+              <input class="form-control" cFormControl
+                        id="numero"
+                        placeholder="153"
+                        type="number"
+                  />
+            </c-col>
+        </c-row>
+        <c-row>
+          &nbsp;
+        </c-row>
+        <c-row>
+          <c-col>
+            <label cLabel for="email">E-mail</label>
+            <input class="form-control" cFormControl
+                      id="email"
+                      placeholder="usuario@rrpoint.com.br"
+                      type="email"
+                />
+          </c-col>
+          <c-col>
+            <label cLabel for="email2">E-mail secundário</label>
+            <input class="form-control" cFormControl
+                      id="email2"
+                      placeholder="usuario@rrpoint.com.br"
+                      type="email"
+                />
+          </c-col>
+        </c-row>
+
+        <c-row>
+          &nbsp;
+        </c-row>
+        <c-row>
+          <c-col>
+            <form class="form-control">
+              <c-row>
+                <c-card-header>
+                  Produtos
+                </c-card-header>
+              </c-row>
+              <c-row>
+                <c-col style="margin-left: 10px; margin-right: 10px;">
+                  <c-row>
+                    <label>Adicionar Produto</label>
+                  </c-row>
+                  <c-row>
+                    <select class="form-control" aria-label="Produto" cSelect>
+                      <option>Escolha um produto</option>
+                      <option value="1">Capa de couro para iPhone 11 Plus</option>
+                      <option value="2">Capa carteira para Redmi Note 11 Pro</option>
+                      <option value="3">Capa carteira iPhone 13</option>
+                      <option value="4">Carregador Tipo-C 35w</option>
+                      <option value="5">Carregador turbo Tipo-A 45w</option>
+                    </select>
+                  </c-row>
+                </c-col>
+                <c-col>
+                  <c-row>
+                    &nbsp;
+                  </c-row>
+                  <c-row>
+                    <button style="color: #FFF; width: 40px;" class="btn btn-success" >
+                      <svg cIcon name="cilCheck" width="15px"></svg>
+                    </button>
+                  </c-row>
+                </c-col>
+              </c-row>
+              <c-row>
+                &nbsp;
+              </c-row>
+              <c-row>
+                <table class="table table-striped" cTable>
+                  <thead>
+                    <tr>
+                      <th scope="col">Id</th>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Categoria</th>
+                      <th scope="col">Preço</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1151</th>
+                      <td>Capa de couro para iPhone 11 Plus</td>
+                      <td>Capinhas para celular</td>
+                      <td>R$ 90,00</td>
+                      <td>Em estoque</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1150</th>
+                      <td>Capa carteira para Redmi Note 11 Pro</td>
+                      <td>Capinhas para celular</td>
+                      <td>R$ 40,00</td>
+                      <td>Em estoque</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1149</th>
+                      <td>Capa carteira iPhone 13</td>
+                      <td>Capinhas para celular</td>
+                      <td>R$ 69,99</td>
+                      <td>Em estoque</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1148</th>
+                      <td>Carregador Tipo-C 35w</td>
+                      <td>Acessórios para celular</td>
+                      <td>R$ 44,99</td>
+                      <td>Esgotado</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1147</th>
+                      <td>Carregador turbo Tipo-A 45w</td>
+                      <td>Acessórios para celular</td>
+                      <td>R$ 34,99</td>
+                      <td>Em estoque</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </c-row>
+            </form>
+          </c-col>
+        </c-row>
+        <c-row>
+          &nbsp;
+        </c-row>
+        <c-row>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            <button style="color: #FFF" class="btn btn-success"cButton type="submit">
+              Salvar
+            </button>
+          </c-col>
+          <c-col>
+            <button style="color: #FFF" class="btn btn-danger" cButton type="submit" routerLink="/vendas">
+              Cancelar
+            </button>
+          </c-col>
+        </c-row>
+      </form>  
+    </c-card-body>
+  </c-card>
+</div>

@@ -1,0 +1,124 @@
+<div class="fade-in">
+  <c-card>
+    <c-card-header>
+      Novo Produto
+    </c-card-header>
+    <c-card-body>
+      <form cForm>
+        <c-row>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="nome">Nome do produto</label>
+              <input cFormControl
+                        id="nome"
+                        placeholder="Capa para celular"
+                        type="text"
+                  />
+            </div>
+          </c-col>
+        </c-row>
+        <c-row>
+          <div class="mb-3">
+            <label cLabel for="descricao">Descricao do produto</label>
+            <textarea cFormControl id="descricao" rows="3"></textarea>
+          </div>
+        </c-row>
+        <c-row>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="codigo-de-barras">Código de barras</label>
+              <input cFormControl
+                        id="codigo-de-barras"
+                        placeholder="15045045645065056056465460"
+                        type="text"
+                  />
+            </div>
+          </c-col>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="fabricante">Fabricante</label>
+              <input cFormControl
+                        id="fabricante"
+                        placeholder="Apple"
+                        type="text"
+                  />
+            </div>
+          </c-col>
+          <c-col class="mb-3 w10">
+            <label cLabel for="estoque">Estoque</label>
+            <input cFormControl
+                      id="estoque"
+                      placeholder="01"
+                      type="number"
+                />
+          </c-col>
+        </c-row>
+        <c-row>
+            <c-col>
+              <label cLabel for="valor-unitario">Preço Unitario</label>
+              <input cFormControl
+                        id="valor-unitario"
+                        placeholder="R$ 10,00"
+                        type="text"
+                  />
+            </c-col>
+            <c-col>
+              <label cLabel for="valor-compra">Preço de compra</label>
+              <input cFormControl
+                        id="valor-unitario"
+                        placeholder="R$ 10,00"
+                        type="text"
+                  />
+            </c-col>
+            <c-col>
+              <label cLabel for="margem-lucro">Margem de Lucro</label>
+              <input cFormControl
+                        id="margem-lucro"
+                        placeholder="R$ 10,00 ou 5%"
+                        type="text"
+                  />
+            </c-col>
+        </c-row>
+        <c-row>
+          &nbsp;
+        </c-row>
+        <c-row>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            <button style="color: #FFF" class="btn btn-success"cButton type="submit">
+              Salvar
+            </button>
+          </c-col>
+          <c-col>
+            <button style="color: #FFF" class="btn btn-danger" cButton type="submit" routerLink="/produtos">
+              Cancelar
+            </button>
+          </c-col>
+        </c-row>
+      </form>  
+    </c-card-body>
+  </c-card>
+</div>

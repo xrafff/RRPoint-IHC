@@ -1,0 +1,146 @@
+<div class="fade-in">
+  <c-card class="mb-4">
+    <c-card-header>
+      Vendas
+    </c-card-header>
+    <c-card-body>
+      <c-row style="margin-left: 25px">
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label for="Pedido">Pedido</label>
+          </c-row>
+          <c-row>
+            <input class="form-control" cFormControl
+            id="Pedido"
+            placeholder="123456"
+            type="text"/>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label>Período</label>
+          </c-row>
+          <c-row>
+            <select class="form-control" aria-label="Período" cSelect>
+              <option>Escolha o período</option>
+              <option value="1">Um mês</option>
+              <option value="2">Três meses</option>
+              <option value="3">Seis meses</option>
+            </select>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label for="Cliente">Cliente</label>
+          </c-row>
+          <c-row>
+            <input class="form-control" cFormControl
+            id="Cliente"
+            placeholder="João das Neves"
+            type="text"/>
+          </c-row>
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label>Pagamento</label>
+          </c-row>
+          <c-row>
+            <select class="form-control" aria-label="Pagamento" cSelect>
+              <option>Meio de pagamento</option>
+              <option value="1">Pix</option>
+              <option value="2">Boleto</option>
+              <option value="3">Cartão de crédito</option>
+            </select>
+          </c-row>
+        </c-col>
+        <c-col>
+          <c-row>
+            &nbsp;
+          </c-row>
+          <c-row style="padding-left: 10px; padding-right: 80px;">
+            <button style="color: #fff;" class="btn btn-info wd-50" cButton color="primary" color="primary">Filtrar</button>
+          </c-row>
+        </c-col>
+      </c-row>
+      <c-row>
+        &nbsp;
+      </c-row>
+      <c-row style="margin-left: 15px">
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <button style="color: #fff;" class="btn btn-success" cButton color="success" color="success" routerLink="/vendas/novo-pedido">Incluir pedido</button>
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <a style="color: grey; text-align: right;" routerLink="./" cNavLink>
+            <svg cIcon name="cilPrint" width="25px"></svg>
+          </a>
+        </c-col>
+      </c-row>
+      <c-row style="margin-left: 3%; margin-right: 3%;">
+        <table class="table table-striped" cTable>
+          <thead>
+            <tr>
+              <th scope="col">Pedido</th>
+              <th scope="col">Cliente</th>
+              <th scope="col">Vendedor</th>
+              <th scope="col">Data da venda</th>
+              <th scope="col">Valor do pedido</th>
+              <th scope="col">Pagamento</th>
+              <th scope="col">Status</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of listaVendas">
+              <th scope="row">{{ item['id'] }}</th>
+              <td>{{ item['nomeCliente'] }}</td>
+              <td>{{ item['nomeVendedor'] }}</td>
+              <td>{{ item['dataVenda'] }}</td>
+              <td>R$ {{ item['valorTotal'] }}</td>
+              <td>{{ item['formaPagamento'] }}</td>
+              <td>{{ item['status'] }}</td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilPencil" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilFindInPage" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #dc3545" routerLink="./" cNavLink>
+                  <svg cIcon name="cilDelete" size="md"></svg>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </c-row>
+      <c-row>
+        &nbsp;
+      </c-row>
+      <c-row style="margin-left: 3%; margin-right: 3%;">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./"><</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">1</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">2</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">3</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">></a></li>
+          </ul>
+        </nav>
+      </c-row>
+    </c-card-body>
+  </c-card>
+</div>

@@ -1,0 +1,227 @@
+<div class="fade-in">
+  <c-card>
+    <c-card-header>
+      Novo Vendedor
+    </c-card-header>
+    <c-card-body>
+      <form cForm>
+        <c-row>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="nome">Nome do vendedor</label>
+              <input class="form-control" cFormControl
+                        id="nome"
+                        name="nome"
+                        placeholder="João da Silva Sauro"
+                        type="text"
+                        required
+                        ngModel
+                  />
+            </div>
+          </c-col>
+          <c-col>
+            <label cLabel for="sexo">Sexo</label>
+            <select class="form-control" 
+                    aria-label="Sexo"
+                    id="sexo"
+                    name="sexo"
+                    cSelect
+                    required
+                    ngModel>
+              <option *ngFor="let item of sexo" value="{{ item }}">{{ item }}</option>
+            </select>
+          </c-col>
+        </c-row>
+        <c-row>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="cpf" required>CPF</label>
+              <input class="form-control" cFormControl
+                        id="cpf"
+                        name="cpf"
+                        placeholder="123.456.789-10"
+                        type="text"
+                        required
+                        ngModel
+                  />
+            </div>
+          </c-col>
+          <c-col>
+            <div class="mb-3">
+              <label cLabel for="telefone">Telefone</label>
+              <input class="form-control" cFormControl
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(11) 4444-4444"
+                        type="tel"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        ngModel
+                  />
+            </div>
+          </c-col>
+          <c-col class="mb-3 w10">
+            <label cLabel for="celular">Celular</label>
+            <input class="form-control" cFormControl
+                      id="celular"
+                      name="celular"
+                      placeholder="(11) 9 4444-4444"
+                      type="tel"
+                      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                      ngModel
+                />
+          </c-col>
+          <c-col class="mb-3 w10">
+            <label cLabel for="nascimento">Data de nascimento</label>
+            <input class="form-control" cFormControl
+                      id="nascimento"
+                      name="nascimento"
+                      placeholder="12/10/1990"
+                      type="date"
+                      required
+                      ngModel
+                />
+          </c-col>
+        </c-row>
+        <c-row>
+            <c-col>
+              <label cLabel for="cep">CEP</label>
+              <input class="form-control" cFormControl
+                        id="cep"
+                        name="cep"
+                        placeholder="15715-870"
+                        type="text"
+                        required
+                        ngModel
+                  />
+            </c-col>
+            <c-col>
+              <label cLabel for="logradouro">Logradouro</label>
+              <input class="form-control" cFormControl
+                        id="logradouro"
+                        name="logradouro"
+                        placeholder="Av. José Pedro"
+                        type="text"
+                        required
+                        ngModel
+                  />
+            </c-col>
+            <c-col>
+              <label cLabel for="numero">Número</label>
+              <input class="form-control" cFormControl
+                        id="numero"
+                        name="numero"
+                        placeholder="153"
+                        type="number"
+                        required
+                        ngModel
+                  />
+            </c-col>
+        </c-row>
+        <c-row>
+          &nbsp;
+        </c-row>
+        <c-row>
+          <c-col>
+            <label cLabel for="bairro">Bairro</label>
+            <input class="form-control" cFormControl
+                      id="bairro"
+                      name="bairro"
+                      placeholder="Vila do Jumentos"
+                      type="text"
+                      required
+                      ngModel
+                />
+          </c-col>
+          <c-col>
+            <label cLabel for="cidade">Cidade</label>
+            <input class="form-control" cFormControl
+                      id="cidade"
+                      name="cidade"
+                      placeholder="Rolândia"
+                      type="text"
+                      required
+                      ngModel
+                />
+          </c-col>
+          <c-col>
+            <label cLabel for="estado">Estado</label>
+            <select class="form-control"
+                    aria-label="estado"
+                    id="estado"
+                    name="estado"
+                    cSelect
+                    required
+                    ngModel>
+              <option *ngFor="let item of estados" value="{{ item }}">{{ item }}</option>
+            </select>
+          </c-col>
+        </c-row>
+        <c-row>
+          &nbsp;
+        </c-row>
+        <c-row>
+          <c-col>
+            <label cLabel for="email">E-mail</label>
+            <input class="form-control" cFormControl
+                      id="email"
+                      name="email"
+                      placeholder="usuario@rrpoint.com.br"
+                      type="email"
+                      required
+                      ngModel
+                />
+          </c-col>
+          <c-col>
+            <label cLabel for="email2">E-mail secundário</label>
+            <input class="form-control" cFormControl
+                      id="email2"
+                      name="email2"
+                      placeholder="usuario@rrpoint.com.br"
+                      type="email"
+                      ngModel
+                />
+          </c-col>
+        </c-row>
+        <c-row>
+          &nbsp;
+        </c-row>
+        <c-row>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            &nbsp;
+          </c-col>
+          <c-col>
+            <button style="color: #FFF" class="btn btn-success"cButton type="submit">
+              Salvar
+            </button>
+          </c-col>
+          <c-col>
+            <button style="color: #FFF" class="btn btn-danger" cButton type="submit" routerLink="/vendedores">
+              Cancelar
+            </button>
+          </c-col>
+        </c-row>
+      </form>  
+    </c-card-body>
+  </c-card>
+</div>

@@ -1,0 +1,30 @@
+{
+    "vendas":
+    [
+        {
+            "id": "1",
+            "nomeCliente": "João da Silva Sauro",
+            "nomeVendedor": "Jão João",
+            "descricao": "Pedido de capinhas diversas",
+            "valorTotal": "150,00",
+            "quantidadeParcelas": "1",
+            "formaPagamento": "Pix",
+            "status": "Finalizado",
+            "entrega": "Sim",
+            "cep": "15715-870",
+            "logradouro": "Av. José Pedro",
+            "bairro": "Vila dos Jumentos",
+            "numero": "153",
+            "cidade": "Rolandia",
+            "estado": "PR",
+            "dataVenda": "16/06/2022",
+            "produtos":
+            [
+                {
+                    "nome": "Capa de couro para iPhone 11 Plus",
+                    "valorPago": "90,00"
+                }
+            ]
+        }
+    ]
+}

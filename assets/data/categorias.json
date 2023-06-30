@@ -1,0 +1,13 @@
+{
+    "categorias":
+    [
+        {
+            "id": "1",
+            "nome": "Capinhas para celular"
+        },
+        {
+            "id": "2",
+            "nome": "Acessórios para celular"
+        }
+    ]
+}

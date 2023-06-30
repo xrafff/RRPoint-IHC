@@ -1,0 +1,15 @@
+{
+    "produtos":
+    [
+        {
+            "id": "1",
+            "nome": "Capa de couro para iPhone 11 Plus",
+            "nomeCategoria": "Capinhas para celular",
+            "dataCadastro": "16/06/2022",
+            "preco": "90,00",
+            "estoque": 4,
+            "codigoDeBarras": "1234567890",
+            "idMarca": "1"
+        }
+    ]
+}
